@@ -26,7 +26,7 @@ export default new Router({
     },
     {
       path:'/page2',
-      component:page2
+      component:resolve => require(['../components/page2'],resolve)
     },
     {
       path:'/page2/info/:id',
